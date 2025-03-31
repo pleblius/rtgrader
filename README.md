@@ -23,7 +23,7 @@ In the rtgrader directory there is an **expected/** folder, which is necessary t
 The expected outputs from the run-time compiler are contained in sub-folders of the **expected/** folder corresponding to each homework assignment.
 If any folder or file is missing, the autograder will fail when attempting to check that output, in which case it needs to be re-cached.
 In the event that a grader or runtime update is provided, the expected folder might need to be re-cached.
-Currently, on hw's 2, 3, 4, 5, 6, 8, 10, and 11 are included.
+Currently, only hw's 2, 3, 4, 5, 6, 8, 10, and 11 are included.
 
 # Makefile
 All operations can be run using the provided makefile in the rtgrader directory.
