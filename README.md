@@ -27,6 +27,7 @@ Currently, only hw's 2, 3, 4, 5, 6, 8, 10, and 11 are included.
 
 # Makefile
 All operations can be run using the provided makefile in the rtgrader directory.
+When a test finishes running, any differences between the user and reference compiler output will be stored in **diff.txt**.
 
 ## Commands
     make

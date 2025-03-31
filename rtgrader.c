@@ -120,7 +120,6 @@ int main(int argc, char **argv) {
 
         cvec_append(diff_output, '\n');
         cvec_append_array_line(diff_output, dir_name, strlen(dir_name));
-        cvec_append(diff_output, '\n');
 
         sub_dir = Opendir(dir_name);
         Chdir(dir_name);
@@ -144,8 +143,8 @@ int main(int argc, char **argv) {
                 printf("\n");
 
             printf("%s", file_name);
-            cvec_append_array(diff_output, file_name, strlen(file_name));
             cvec_append(diff_output, '\n');
+            cvec_append_array_line(diff_output, file_name, strlen(file_name));
 
             if (snprintf(buffer1, 1024, "%s/%s/%s/%s", grader_name, folder_name, dir_name, file_name) < 0) {
                 fprintf(stderr, "Failed to write string to buffer: %s\n", strerror(errno));
@@ -350,8 +349,7 @@ int compare_files(char *filename1, char *filename2) {
     if (!return_status) {
         cvec_append_array(diff_output, rt_output->array, rt_output->size);
         cvec_append_array_line(diff_output, "************************************************************", 60);
-        cvec_append_array_line(diff_output, your_output->array, your_output->size);
-        cvec_append(diff_output, '\n');
+        cvec_append_array(diff_output, your_output->array, your_output->size);
     }
 
     free(file_string1);
