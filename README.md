@@ -66,7 +66,7 @@ All operations can be run using the provided makefile in the rtgrader directory.
             Deletes the **cacher** and **rtgrader** executables.
 
     make clean-expected
-        *make clean-expected*
+        make clean-expected
 
         Deletes the **expected/** folder and all of its contents.
             Due to the slow speed of the run-time compiler, regenerating this folder is not recommended if avoidable.
