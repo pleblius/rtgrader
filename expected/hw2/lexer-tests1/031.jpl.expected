@@ -1,0 +1,1 @@
+Compilation failed: grader/hw2/lexer-tests1/031.jpl:4:15: Attempting to call a non-function i : VariableInfo(type=IntType())

@@ -1,0 +1,1 @@
+Compilation failed: grader/hw4/ok/020.jpl:6:13: Field y of pair struct needs a float, not a int

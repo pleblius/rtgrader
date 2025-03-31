@@ -1,0 +1,1 @@
+Compilation failed: nasm -f elf64 /tmp/tmpvym88yzr.s -o /tmp/tmpdcnzm1m1.o

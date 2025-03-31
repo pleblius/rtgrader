@@ -1,0 +1,1 @@
+Compilation failed: grader/hw6/fail-fuzzer2/019.jpl:1:60: Can only access fields of structs, not float

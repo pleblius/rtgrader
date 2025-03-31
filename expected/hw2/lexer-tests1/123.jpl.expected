@@ -1,0 +1,1 @@
+Compilation failed: grader/hw2/lexer-tests1/123.jpl:5:4: Cannot bind int[,,] as a rank-4 array

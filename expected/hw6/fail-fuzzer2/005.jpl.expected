@@ -1,0 +1,1 @@
+Compilation failed: grader/hw6/fail-fuzzer2/005.jpl:41:5: Field b of d struct needs a void, not a int

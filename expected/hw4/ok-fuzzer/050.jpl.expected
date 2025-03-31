@@ -1,0 +1,1 @@
+Compilation failed: grader/hw4/ok-fuzzer/050.jpl:9:0: Assert condition must be a bool, not a void

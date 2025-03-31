@@ -1,0 +1,1 @@
+Compilation failed: nasm -f elf64 /tmp/tmp1j_u4450.s -o /tmp/tmp5qyphkna.o
