@@ -3,7 +3,10 @@ A small autograder that compares user executable output to the reference compile
 Output is generated using the "-r" flag for both the user and reference compiler.
 
 ## Known Bugs
-hw7 and hw9 contain unrecoverable errors in the run-time compiler and are not excluded from the run-all methods.
+hw7 and hw9 contain unrecoverable errors in the run-time compiler and are excluded from the run-all methods.
+Runtime output differs from the autograder output on some outputs, so otherwise accurate programs might show a failing test.
+    e.g. Runtime fails type-checking on non-integer array indexes, while the autograder (perhaps erronesouly) expects those to pass type-checking.
+Runtime compiler throws unrecoverable errors when void types are introduced.
 
 # Setup
 Download this folder and copy it into your compilers/template/ folder.
