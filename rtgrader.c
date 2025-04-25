@@ -116,7 +116,7 @@ int main(int argc, char **argv) {
         sub = vector_get(directories, i);
         dir_name = sub->d_name;
         dir_written = 0;
-        printf("\n%s\n", dir_name);
+        printf("\n%s", dir_name);
 
         cvec_append(diff_output, '\n');
         cvec_append_array_line(diff_output, dir_name, strlen(dir_name));
@@ -139,7 +139,7 @@ int main(int argc, char **argv) {
             f_struct = vector_get(files, j);
             file_name = f_struct->d_name;
 
-            if (print_count % 3 == 0)
+            if (print_count % 6 == 0)
                 printf("\n");
 
             printf("%s", file_name);

@@ -63,4 +63,4 @@ help:
 	@echo "\tmake cache [RT] [TEST]: runs the cacher, using the runtime compiler [RT] (default 'jplc-linux'), on test-folder [TEST] (default 'hw2')"
 	@echo "\tmake cache-all [RT]: runs the cacher, using the runtime compiler [RT] (default 'jplc-linux'), on all test-folders (excluding 7, 9, 12, 13, 14)\n"
 	@echo "\tmake clean: cleans up all non-src files in the folder, including the executables. Does not remove the 'expected' folder"
-	@echo "\tmake clean-expected: deletes the expected folder; unadvised due to slow execution time of cacher"
+	@echo "\tmake clean-expected: deletes the expected folder; unadvised due to slow run-time execution"

@@ -4,9 +4,10 @@ Output is generated using the "-r" flag for both the user and reference compiler
 
 ## Known Bugs
 hw7 and hw9 contain unrecoverable errors in the run-time compiler and are excluded from the run-all methods.
-Runtime output differs from the autograder output on some outputs, so otherwise accurate programs might show a failing test.
+hw12 contains near-infinite runtime (uint64_t_MAX size) array and sum loops that have been excluded to spare disk space and allow the tests to
+    complete within a standard human lifetime.
+Runtime output differs from the autograder output on some lexer and parser outputs, so otherwise accurate programs might show a failing test.
     e.g. Runtime fails type-checking on non-integer array indexes, while the autograder (perhaps erronesouly) expects those to pass type-checking.
-Runtime compiler throws unrecoverable errors when void types are introduced.
 
 # Setup
 Download this folder and copy it into your compilers/template/ folder.
